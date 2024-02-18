@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: flaskapp-depl
+  name: flaskapp-depl
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: flaskapp-depl
+  template:
+    metadata:
+      labels:
+        app: flaskapp-depl
+    spec:
+      containers:
+      - image: 09512/testflaskapp:v1
+        imagePullPolicy: IfNotPresent
+        name: testflaskapp
+        resources: {}
+      terminationGracePeriodSeconds: 30
