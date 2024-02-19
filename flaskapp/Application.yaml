@@ -15,7 +15,7 @@ spec:
   source:
     path: flaskapp
     repoURL: 'https://github.com/nadeera09512/ArgoCD-2.git'
-    targetRevision: HEAD
+    targetRevision: main
   project: default
   syncPolicy:
     automated:
