@@ -14,7 +14,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: flaskapp
-    repoURL: 'https://github.com/nadeera09512/Argo.git'
+    repoURL: 'https://github.com/nadeera09512/ArgoCD-2.git'
     targetRevision: HEAD
   project: default
   syncPolicy:
