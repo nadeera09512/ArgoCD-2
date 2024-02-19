@@ -15,7 +15,7 @@ spec:
         app: flaskapp-depl
     spec:
       containers:
-      - image: 09512/testflaskapp:v1
+      - image: 09512/testflaskapp:v1.0.0
         imagePullPolicy: IfNotPresent
         name: testflaskapp
         resources: {}
