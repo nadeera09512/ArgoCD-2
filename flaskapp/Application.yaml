@@ -4,7 +4,7 @@ metadata:
   name: argo-flaskapp
   namespace: argocd
   annotations:
-        argocd-image-updater.argoproj.io/image-list: 09512/testflaskapp:1.0.x
+        argocd-image-updater.argoproj.io/image-list: 09512/testflaskapp:1.x
         argocd-image-updater.argoproj.io/write-back-method: git
   finalizers:
     - resources-finalizer.argocd.argoproj.io
